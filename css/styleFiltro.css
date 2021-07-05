@@ -29,23 +29,48 @@ background-color: white;
 
 /* Estilo de los botones */
 .btn{
-border: none;
+border:none;
 outline: none;
-padding: 15px 16px;
-padding-inline: 39.15px;
+padding: 10px 12px;
 background-color: #FFC72C;
 border-color: #281A08;
 cursor: pointer;
 }
 
 .btn:hover{
-background-color: #FFC72C;
-color: #281A08;
+background-color: #F2A900;
+color: white;
 border-color: #281A08;
 }
 
-.btn.active{
+.btn:active{
+max-width: 100%;
 background-color: #F2A900;
 color: white;
 border-color: #27251F;
+}
+
+/* Estilo de las etiquetas */
+.badge-me {
+  border: none;
+  outline: none;
+  background-color:  #977506;
+  border-color: #281A08;
+  cursor: pointer;
+  color: white;
+  font-size: 1em;
+  margin-bottom: .5em;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.badge-me:hover {
+  background-color: #F2A900;
+  color: white;
+  border-color: #281A08;
+}
+
+.badge-me:active {
+  background-color: #F2A900;
+  color: white;
+  border-color: #27251F;
 }

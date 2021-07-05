@@ -1,4 +1,6 @@
-
+body{
+  background-color: white;
+}
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -28,24 +30,13 @@
   background-color: none;
 }
 
-/* Estilo de los botones */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: lightgrey;
-  border-color: #281A08;
-  cursor: pointer;
+.carousel{
+  background-color: #FFC72C;
+  
 }
 
-.btn:hover {
-  background-color: #FFC72C;
-  color: #281A08;
-  border-color: #281A08;
+.carousel-caption{
+  color: #333;
 }
 
-.btn.active {
-  background-color: #FFC72C;
-  color: white;
-  border-color: none;
-}
+
