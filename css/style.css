@@ -1,3 +1,5 @@
+
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -11,3 +13,39 @@
       font-size: 3.5rem;
     }
   }
+
+/* Estilo del filtro  */
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  overflow: hidden;
+  background-color: none;
+}
+
+/* Estilo de los botones */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: lightgrey;
+  border-color: #281A08;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #FFC72C;
+  color: #281A08;
+  border-color: #281A08;
+}
+
+.btn.active {
+  background-color: #FFC72C;
+  color: white;
+  border-color: none;
+}

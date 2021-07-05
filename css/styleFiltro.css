@@ -1,0 +1,51 @@
+.bd-placeholder-img{
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg{
+    font-size: 3.5rem;
+  }
+}
+
+/* Estilo del filtro  */
+.filterDiv{
+display: none;
+}
+
+.show{
+display: block;
+}
+
+
+.container{
+overflow: hidden;
+background-color: white;
+}
+
+/* Estilo de los botones */
+.btn{
+border: none;
+outline: none;
+padding: 15px 16px;
+padding-inline: 39.15px;
+background-color: #FFC72C;
+border-color: #281A08;
+cursor: pointer;
+}
+
+.btn:hover{
+background-color: #FFC72C;
+color: #281A08;
+border-color: #281A08;
+}
+
+.btn.active{
+background-color: #F2A900;
+color: white;
+border-color: #27251F;
+}
