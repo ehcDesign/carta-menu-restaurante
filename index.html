@@ -4,54 +4,89 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Ricardo Perera">
+    <meta name="author" content="Estefania Hidalgo">
 
-<title>Album example · Bootstrap v5.0</title>
+<title>Menú</title>
 <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="css/styleHeader.css">
 <link rel="stylesheet" href="css/styleFiltro.css">
+
+<link rel="stylesheet" href="css/stylefotos.css">
+<link rel="stylesheet" href="css/quienessomos.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 <div class="container filtro">
-  </head>
-  <body>
+ 
   <header>
     <div class="header">
-        <h1>COMIDA RAPIDA</h1>
-        <h4>Tenemos hasta Vegana</h4>
     </div>
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+					aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/banner-1.png" class="d-block w-100" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="img/banner-2.png" class="d-block w-100" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="img/banner-3.png" class="d-block w-100" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+		</div>
 
     <div id="navbar">
         <a class="activado" href="#">Menú</a>
-        <a href="#">¿Quienes somos?</a>
-        <a href="#">Contacto</a>
+        <a href="quienessomos.html">¿Quienes Somos?</a>
+        <a href="contacto.html">Contacto</a>
+        
     </div>
+    
 </header>
 <!-- Filtro de comidas -->
     <h2>      
-
-    </h2>
+</h2>
 
   <div id="myBtnContainer" class="filtro">
-    <button class="btn active" onclick="filterSelection('all')"> Mostrar todos</button>
-    <button class="btn" onclick="filterSelection('hamburguesa')"> Hamburguesas</button>
-    <button class="btn" onclick="filterSelection('ternera')"> Vacuno</button>
-    <button class="btn" onclick="filterSelection('pollo')"> Pollo</button>
-    <button class="btn" onclick="filterSelection('cerdo')"> Cerdo</button>
-    <button class="btn" onclick="filterSelection('ensalada')"> Ensalada</button>
-    <button class="btn" onclick="filterSelection('vegano')"> Vegano</button>
-    <button class="btn" onclick="filterSelection('postre')"> Postres</button>
-    <button class="btn" onclick="filterSelection('bebida')"> Bebidas</button>
+    <span class="badge badge-me" onclick="filterSelection('all')"> Mostrar todos</span>
+    <span class="badge badge-me" onclick="filterSelection('hamburguesa')"> Hamburguesas</span>
+    <span class="badge badge-me" onclick="filterSelection('ternera')"> Vacuno</span>
+    <span class="badge badge-me" onclick="filterSelection('pollo')"> Pollo</span>
+    <span class="badge badge-me" onclick="filterSelection('cerdo')"> Cerdo</span>
+    <span class="badge badge-me" onclick="filterSelection('ensalada')"> Ensalada</span>
+    <span class="badge badge-me" onclick="filterSelection('vegano')"> Vegano</span>
+    <span class="badge badge-me" onclick="filterSelection('postre')"> Postres</span>
+    <span class="badge badge-me" onclick="filterSelection('bebida')"> Bebidas</span>
   </div>
   </div>
 
 <main>
-
-  <div class="album py-5 bg-light">
+<!-- imagenes menu -->
+  <div class="album py-5 ">
     <div class="container">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col filterDiv ensalada">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img class="bd-placeholder-img card-img-top" src="img/ensaladas pollo/ensalada-p-manzana-queso.jpg" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></img>
+            
 
             <div class="card-body">
               <p class="card-text">ENSALADA</p>
@@ -67,7 +102,7 @@
         </div>
         <div class="col filterDiv ensalada pollo">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img class="bd-placeholder-img card-img-top" src="img/ensaladas pollo/ensalada-verde.jpg" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef"></img>
 
             <div class="card-body">
               <p class="card-text">ENSALADA DE POLLO</p>
@@ -83,7 +118,7 @@
         </div>
         <div class="col filterDiv ensalada vegano">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <img class="bd-placeholder-img card-img-top" src="img/ensaladas verde/ensalada-esparragos-frutos.jpg" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef"></img>
   
               <div class="card-body">
                 <p class="card-text">ENSALADA DE TOFU</p>
@@ -99,7 +134,7 @@
           </div>
         <div class="col filterDiv hamburguesa ternera">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img class="bd-placeholder-img card-img-top" src="img/hamburguesas ternera/600x400-1.png"  width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef"></img>
 
             <div class="card-body">
               <p class="card-text">HAMBUERGUESA DE TERNERA</p>
@@ -115,7 +150,7 @@
         </div>
         <div class="col filterDiv hamburguesa pollo">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img class="bd-placeholder-img card-img-top" src="img/hamb-pollo/hamburguesa-pollo-frito.jpg" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef"></img>
 
             <div class="card-body">
               <p class="card-text">HAMBURGUESA DE POLLO</p>
@@ -131,7 +166,7 @@
         </div>
         <div class="col filterDiv hamburguesa cerdo">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img class="bd-placeholder-img card-img-top" src="img/hamburguesas ternera/600x400-4.png" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef"></img>
 
             <div class="card-body">
               <p class="card-text">HAMBURGUESA DE CERDO</p>
@@ -147,7 +182,7 @@
         </div>
         <div class="col filterDiv hamburguesa vegano">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <img class="bd-placeholder-img card-img-top" src="img/hamburguesas tofu/600x400-T1.png" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef"></img>
   
               <div class="card-body">
                 <p class="card-text">HAMBURGUESA DE TOFU</p>
@@ -163,7 +198,7 @@
           </div>
         <div class="col filterDiv postre">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img class="bd-placeholder-img card-img-top" src="img/postres/flan-de-dulce-de-leche.jpg" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef"></img>
 
             <div class="card-body">
               <p class="card-text">POSTRE tarta de chocolate</p>
@@ -179,7 +214,7 @@
         </div>
         <div class="col filterDiv postre">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <img class="bd-placeholder-img card-img-top" src="img/postres/leche-merengada.jpg" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef"></img>
   
               <div class="card-body">
                 <p class="card-text">POSTRE tarta de queso</p>
@@ -195,7 +230,7 @@
           </div>
         <div class="col filterDiv ternera">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img class="bd-placeholder-img card-img-top" src="img/filetes/fileteternera.jpg" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef"></img>
 
             <div class="card-body">
               <p class="card-text">Filete de Ternera</p>
@@ -211,7 +246,7 @@
         </div>
         <div class="col filterDiv pollo">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img class="bd-placeholder-img card-img-top" src="img/filetes/pechugadepollo.jpg" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef"></img>
 
             <div class="card-body">
               <p class="card-text">POLLO</p>
@@ -227,7 +262,7 @@
         </div>
         <div class="col filterDiv cerdo">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img class="bd-placeholder-img card-img-top" src="img/filetes/filetecerdo.jpg" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef"></img>
 
             <div class="card-body">
               <p class="card-text">CERDO</p>
@@ -243,7 +278,7 @@
         </div>
         <div class="col filterDiv vegano">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <img class="bd-placeholder-img card-img-top" src="img/filetes/Filetes-de-tofu-rebozados-receta.jpg" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef"></img>
   
               <div class="card-body">
                 <p class="card-text">TOFU</p>
@@ -259,7 +294,7 @@
         </div>
           <div class="col filterDiv bebida">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <img class="bd-placeholder-img card-img-top" src="img/filetes/cerveza-helada-1024x646.jpg" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef"></img>
   
               <div class="card-body">
                 <p class="card-text">Cerveza Artesana Domus</p>
@@ -275,7 +310,7 @@
           </div>
           <div class="col filterDiv bebida">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <img class="bd-placeholder-img card-img-top" src="img/filetes/vino.jpg" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef"></img>
   
               <div class="card-body">
                 <p class="card-text">Vino de Toledo</p>

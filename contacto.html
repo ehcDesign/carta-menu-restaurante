@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html">Ir atras</a>
+         <!---------------------Bloque de formulario-------------------------->
+		<div id="form" class="bloque">
+			<fieldset>
+				<!-- "fieldset" Crea un recuadro alrededor del formulario-->
+				<legend>Contacto</legend>
+				<!--"legend" Crea un titulo en la parte superior-->
+				<form method="get">
+					<p>Nombre y Apellidos: <input placeholder="Nombre" type="text" name="Nombre" /></p>
+
+					<p>Email: <input type="email" placeholder="Email" name="espacio para email" /></p>
+					<p>Teléfono: <input type="tel" placeholder="Teléfono" name="parametros de un telefono " /></p>
+					<!--"placeholder" es para escrivir en gris texto que se borrara cuando escribas-->
+					<textarea cols="70" rows="10" name="texto">Escribe aquí</textarea><br>
+					<input type="checkbox" name="seleccion" value="" id="rojo" /><label for="rojo">Deseas recibir un
+						mail.</label><br>
+					<input type="checkbox" name="seleccion" value="" id="verde" /><label for="verde">Deseas que te
+						llamemos. </label>
+					<div id='boton'>
+						<button class="btn" type="submit" value="Enviar">Enviar</button>
+					</div>
+				</form>
+			</fieldset>
+		</div>
+		<!-----------------------------fin de bloque de formulario--------------->
+    </div>
+    
+   
+</body>
+</html>
